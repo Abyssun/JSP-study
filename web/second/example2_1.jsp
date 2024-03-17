@@ -18,6 +18,25 @@
     <%= rightNow.get(Calendar.YEAR)%>:<%= rightNow.get(Calendar.MONTH)+1%>:<%= rightNow.get(Calendar.DAY_OF_MONTH)%>
 -->
 <%--This is JSP content(客户端看不到源代码)--%>
-
+<%! int total,begin,end;
+    public int sum(int a,int b)
+    {
+        total = 0;
+        for (int i=a;i<=b;i++)
+            total+=i;
+            return total;
+    }%>
+<% begin=1;
+end=50;
+total=sum(begin,end);%>
+<h2>
+    从
+    <%=begin%><!--JSP表达式-->
+    到
+    <%=end%>
+    的和为
+    <%=total%>
+    <br>
+</h2>
 </body>
 </html>
