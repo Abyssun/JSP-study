@@ -6,14 +6,14 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%--<%@ include file="example2_5_header.jsp"%>--%>
+<%@ include file="example2_5_header.jsp"%>
 <html>
 <head>
     <title>Include</title>
 
 </head>
 <body>
-<%@ include file="example2_5_header.jsp"%>
+<%--<%@ include file="example2_5_header.jsp"%>--%>
 <tr>
     <td>
         <table>
